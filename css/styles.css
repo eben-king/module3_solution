@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 1500px;
+}
+
+nav div ul li a {
+  visibility: hidden;
+}
+
+section div div {
+  background-color: blue;
+  color: #fff;
+  margin: 20px;
+}
+
+.row {
+  padding: 10px;
+}
+
+@media (max-width: 567px) {
+  nav div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav div ul li a {
+    visibility: visible;
+  }
+  nav div ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+  }
+}
